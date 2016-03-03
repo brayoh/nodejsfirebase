@@ -1,0 +1,40 @@
+{
+  "name": "node-firebase",
+  "version": "1.0.0",
+  "description": "node implementation of firebase db usage",
+  "main": "app.js",
+  "scripts": {
+    "test": "",
+    "start": "node app.js",
+    "watch": "watchify public/index.js -o public/js/bundle.js -v",
+    "browserify": "browserify public/index.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brayoh/nodejsfirebase.git"
+  },
+  "keywords": [
+    "nodejs",
+    "firebase",
+    "node",
+    "firebase"
+  ],
+  "author": "brian njenga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brayoh/nodejsfirebase/issues"
+  },
+  "homepage": "https://github.com/brayoh/nodejsfirebase#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "firebase": "^2.4.1",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "watchify": "^3.7.0"
+  }
+}
